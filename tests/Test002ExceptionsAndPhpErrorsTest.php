@@ -18,16 +18,25 @@ class Test002ExceptionsAndPhpErrorsTest extends PHPUnit_Framework_TestCase {
     }
     public function testException()
     {
-        // Method available since Release 5.2.0
+        // Method available since phpunit 5.2.0
         if (method_exists($this, 'expectException')) {
             $this->expectException(get_class(new InvalidArgumentException()));
+            $this->expectExceptionCode(678);
+            $this->expectExceptionMessage();
+            $this->expectExceptionMessageRegExp('# of #');
         }
         else {
-            $this->setExpectedException(get_class(new InvalidArgumentException()));
+            $this->setExpectedException(
+                get_class(new InvalidArgumentException()),
+                $message = "description of exception",
+                $code = 678
+            );
+            $this->setExpectedExceptionRegExp(
+                get_class(new InvalidArgumentException()),
+                $messageRegExp = '# of #',
+                $code = 678
+            );
         }
-        $this->expectExceptionCode(678);
-        $this->expectExceptionMessage("description of exception");
-        $this->expectExceptionMessageRegExp('# of #');
 
         // and now we throw exception and test is ok
         $this->_throwInvalidArgumentException();
