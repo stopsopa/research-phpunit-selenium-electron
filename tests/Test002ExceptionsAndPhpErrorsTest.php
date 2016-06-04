@@ -22,7 +22,7 @@ class Test002ExceptionsAndPhpErrorsTest extends PHPUnit_Framework_TestCase {
         if (method_exists($this, 'expectException')) {
             $this->expectException(get_class(new InvalidArgumentException()));
             $this->expectExceptionCode(678);
-            $this->expectExceptionMessage();
+            $this->expectExceptionMessage("description of exception");
             $this->expectExceptionMessageRegExp('# of #');
         }
         else {
