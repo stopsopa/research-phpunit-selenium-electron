@@ -2,8 +2,8 @@
 
 namespace Stopsopa;
 use PHPUnit_Framework_TestCase;
-use stdClass;
 use InvalidArgumentException;
+use Exception;
 
 /**
  * phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions
@@ -18,7 +18,13 @@ class Test002ExceptionsAndPhpErrorsTest extends PHPUnit_Framework_TestCase {
     }
     public function testException()
     {
-        $this->expectException(get_class(new InvalidArgumentException()));
+        // Method available since Release 5.2.0
+        if (method_exists($this, 'expectException')) {
+            $this->expectException(get_class(new InvalidArgumentException()));
+        }
+        else {
+            $this->setExpectedException(get_class(new InvalidArgumentException()));
+        }
         $this->expectExceptionCode(678);
         $this->expectExceptionMessage("description of exception");
         $this->expectExceptionMessageRegExp('# of #');
