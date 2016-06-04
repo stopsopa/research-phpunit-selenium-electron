@@ -18,7 +18,7 @@ class Test002ExceptionsAndPhpErrorsTest extends PHPUnit_Framework_TestCase {
     }
     public function testException()
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(get_class(new InvalidArgumentException()));
         $this->expectExceptionCode(678);
         $this->expectExceptionMessage("description of exception");
         $this->expectExceptionMessageRegExp('# of #');
