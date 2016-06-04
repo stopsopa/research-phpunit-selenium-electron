@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.org/stopsopa/research-phpunit-selenium-electron.svg?branch=master)](https://travis-ci.org/stopsopa/research-phpunit-selenium-electron)
+[![Coverage Status](https://coveralls.io/repos/github/stopsopa/research-phpunit-selenium-electron/badge.svg?branch=master)](https://coveralls.io/github/stopsopa/research-phpunit-selenium-electron?branch=master)
