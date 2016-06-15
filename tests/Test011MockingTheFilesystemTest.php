@@ -1,7 +1,7 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use Stopsopa\Filesystem\Example;
 use org\bovigo\vfs\vfsStreamWrapper;
 use org\bovigo\vfs\vfsStreamDirectory;
@@ -10,7 +10,7 @@ use org\bovigo\vfs\vfsStream;
 /**
  * https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.mocking-traits-and-abstract-classes
  */
-class Test010MockingAbstractClassesAndTraitsTest extends TestCase {
+class Test010MockingAbstractClassesAndTraitsTest extends PHPUnit_Framework_TestCase {
     // zamiast tego vvv
 
 //    protected function setUp()

@@ -1,14 +1,14 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use Stopsopa\Mock\AbstractTrait;
 use Stopsopa\Mock\AbstractClass;
 
 /**
  * https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.mocking-traits-and-abstract-classes
  */
-class Test011MockingTheFilesystemTest extends TestCase {
+class Test011MockingTheFilesystemTest extends PHPUnit_Framework_TestCase {
     public function testConcreteMethodFromAbstractTrait()
     {
         $mock = $this->getMockForTrait(AbstractTrait::class);

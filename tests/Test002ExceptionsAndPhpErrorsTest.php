@@ -1,13 +1,13 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use InvalidArgumentException;
 
 /**
  * phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions
  */
-class Test002ExceptionsAndPhpErrorsTest extends TestCase {
+class Test002ExceptionsAndPhpErrorsTest extends PHPUnit_Framework_TestCase {
 
     protected function _throwInvalidArgumentException() {
         throw new InvalidArgumentException(

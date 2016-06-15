@@ -1,13 +1,13 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
 /**
  * https://phpunit.de/manual/current/en/fixtures.html#fixtures.global-state
  * @backupStaticAttributes true
  */
-class Test005BackupGlobalTest extends TestCase {
+class Test005BackupGlobalTest extends PHPUnit_Framework_TestCase {
     protected static $var;
 //    protected $one;
     public function testOne() {
