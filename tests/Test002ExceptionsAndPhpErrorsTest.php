@@ -3,7 +3,6 @@
 namespace Stopsopa;
 use PHPUnit_Framework_TestCase;
 use InvalidArgumentException;
-use Exception;
 
 /**
  * phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions

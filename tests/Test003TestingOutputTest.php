@@ -2,8 +2,6 @@
 
 namespace Stopsopa;
 use PHPUnit_Framework_TestCase;
-use stdClass;
-use InvalidArgumentException;
 
 /**
  * https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.output
