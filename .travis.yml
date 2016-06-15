@@ -7,6 +7,7 @@ php:
 sudo: false
 
 install:
+  - phpunit --version
   - composer install --no-interaction
 
 script:
