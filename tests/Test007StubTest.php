@@ -1,7 +1,7 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Stopsopa\SomeClass;
 use Exception;
 
@@ -9,7 +9,7 @@ use Exception;
  * https://phpunit.de/manual/current/en/test-doubles.html
  * @backupStaticAttributes true
  */
-class Test007StubTest extends PHPUnit_Framework_TestCase {
+class Test007StubTest extends TestCase {
     public function testStub()
     {
         // Create a stub for the SomeClass class.

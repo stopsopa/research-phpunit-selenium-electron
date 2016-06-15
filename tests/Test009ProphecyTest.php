@@ -1,14 +1,14 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Stopsopa\Mock\Observer;
 use Stopsopa\Mock\Subject;
 
 /**
  * https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.prophecy
  */
-class Test009ProphecyTest extends PHPUnit_Framework_TestCase {
+class Test009ProphecyTest extends TestCase {
     public function testObserversAreUpdated()
     {
         $subject = new Subject('My subject');

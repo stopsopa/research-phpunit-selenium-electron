@@ -1,13 +1,13 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use stdClass;
 
 /**
  * https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.test-dependencies
  */
-class Test001DependsAndDataProvidersTest extends PHPUnit_Framework_TestCase {
+class Test001DependsAndDataProvidersTest extends TestCase {
     public function testEmpty()
     {
         $stack = [];

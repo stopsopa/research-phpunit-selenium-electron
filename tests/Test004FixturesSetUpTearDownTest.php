@@ -1,12 +1,12 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * https://phpunit.de/manual/current/en/fixtures.html
  */
-class Test004FixturesSetUpTearDownTest extends PHPUnit_Framework_TestCase {
+class Test004FixturesSetUpTearDownTest extends TestCase {
 
     /**
      * This method is good to establish connection to db

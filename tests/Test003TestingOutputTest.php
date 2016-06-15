@@ -1,12 +1,12 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.output
  */
-class Test003TestingOutputTest extends PHPUnit_Framework_TestCase {
+class Test003TestingOutputTest extends TestCase {
 
     public function testExpectFooActualFoo()
     {

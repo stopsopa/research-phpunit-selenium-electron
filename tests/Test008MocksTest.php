@@ -1,7 +1,7 @@
 <?php
 
 namespace Stopsopa;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Stopsopa\Mock\Observer;
 use Stopsopa\Mock\Subject;
 use stdClass;
@@ -9,7 +9,7 @@ use stdClass;
 /**
  * https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.stubs
  */
-class Test008MocksTest extends PHPUnit_Framework_TestCase {
+class Test008MocksTest extends TestCase {
 
     public function testObserversAreUpdated()
     {
