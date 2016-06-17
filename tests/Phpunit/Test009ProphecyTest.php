@@ -1,9 +1,9 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
-use Stopsopa\Mock\Observer;
-use Stopsopa\Mock\Subject;
+use Stopsopa\Phpunit\Mock\Observer;
+use Stopsopa\Phpunit\Mock\Subject;
 
 /**
  * https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.prophecy

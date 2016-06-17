@@ -1,6 +1,6 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
 use InvalidArgumentException;
 

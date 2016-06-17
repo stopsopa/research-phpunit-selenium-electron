@@ -1,8 +1,8 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
-use Stopsopa\Filesystem\Example;
+use Stopsopa\Phpunit\Filesystem\Example;
 use org\bovigo\vfs\vfsStreamWrapper;
 use org\bovigo\vfs\vfsStreamDirectory;
 use org\bovigo\vfs\vfsStream;

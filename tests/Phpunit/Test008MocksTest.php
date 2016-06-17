@@ -1,9 +1,9 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
-use Stopsopa\Mock\Observer;
-use Stopsopa\Mock\Subject;
+use Stopsopa\Phpunit\Mock\Observer;
+use Stopsopa\Phpunit\Mock\Subject;
 use stdClass;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Stopsopa\Mock;
+namespace Stopsopa\Phpunit\Mock;
 
 trait AbstractTrait
 {

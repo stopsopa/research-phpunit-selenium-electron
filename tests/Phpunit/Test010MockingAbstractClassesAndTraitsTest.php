@@ -1,9 +1,9 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
-use Stopsopa\Mock\AbstractTrait;
-use Stopsopa\Mock\AbstractClass;
+use Stopsopa\Phpunit\Mock\AbstractTrait;
+use Stopsopa\Phpunit\Mock\AbstractClass;
 
 /**
  * https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.mocking-traits-and-abstract-classes

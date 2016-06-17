@@ -1,8 +1,8 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
-use Stopsopa\SomeClass;
+use Stopsopa\Phpunit\SomeClass;
 use Exception;
 use PHPUnit_Runner_Version;
 

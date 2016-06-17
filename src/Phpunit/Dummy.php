@@ -1,6 +1,6 @@
 <?php
 
-namespace Stopsopa;
+namespace Stopsopa\Phpunit;
 
 class Dummy {
     public static function test() {

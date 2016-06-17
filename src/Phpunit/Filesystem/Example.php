@@ -1,6 +1,6 @@
 <?php
 
-namespace Stopsopa\Filesystem;
+namespace Stopsopa\Phpunit\Filesystem;
 
 class Example
 {
