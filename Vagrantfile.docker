@@ -6,7 +6,6 @@
 # Zmienić na Vagrantfile.docker
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
-  config.vm.hostname = "absolvent.pl"
   config.vm.network "private_network", ip: ENV["REACT_ELASTIC"] || "172.18.0.100"
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "2524"
@@ -25,7 +24,7 @@ Vagrant.configure("2") do |config|
     
         echo "==== apt-get update =====";  
     
-    echo 'y' | sudo apt-add-repository ppa:ondrej/php5-5.6
+    echo 'y' | apt-add-repository ppa:ondrej/php5-5.6
                
     apt-get update --fix-missing
     apt-get dist-upgrade
@@ -51,7 +50,7 @@ Vagrant.configure("2") do |config|
     
         echo "==== setup host ====";
         
-    sed -ri "s/ipv6only=on;/ipv6only=on;\\nerror_log \\/vagrant\\/error\\.log;\\naccess_log \\/vagrant\\/access\\.log;\\nlocation ~ \\\\\\.php$ {\\nfastcgi_pass unix:\\/var\\/run\\/php5-fpm\\.sock;\\nfastcgi_index app\\.php;\\ninclude fastcgi_params;\\n}\\n/g" /etc/nginx/sites-enabled/default                
+    sed -ri "s/ipv6only=on;/ipv6only=on;\\nerror_log \\/vagrant\\/error\\.log;\\naccess_log \\/vagrant\\/access\\.log;\\nlocation ~ \\\\\\.php$ {\\nfastcgi_pass unix:\\/var\\/run\\/php5-fpm\\.sock;\\nfastcgi_index app\\.php;\\ninclude fastcgi_params;\\n}\\nsendfile off;\\n/g" /etc/nginx/sites-enabled/default
         
         echo "==== vbox -> hosts =====";                
         
