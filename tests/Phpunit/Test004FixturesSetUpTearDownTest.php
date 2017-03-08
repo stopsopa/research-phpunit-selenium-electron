@@ -5,6 +5,21 @@ use PHPUnit_Framework_TestCase;
 
 /**
  * https://phpunit.de/manual/current/en/fixtures.html
+ 
+Result is:
+Tests\BackendBundle\Controller\CallbackControllerTest::setUpBeforeClass
+Tests\BackendBundle\Controller\CallbackControllerTest::setUp
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::testOne
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
+Tests\BackendBundle\Controller\CallbackControllerTest::setUp
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::testTwo
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDownAfterClass
+
  */
 class Test004FixturesSetUpTearDownTest extends PHPUnit_Framework_TestCase {
 
