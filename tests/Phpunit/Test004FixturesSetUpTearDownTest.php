@@ -4,22 +4,7 @@ namespace Stopsopa\Phpunit;
 use PHPUnit_Framework_TestCase;
 
 /**
- * https://phpunit.de/manual/current/en/fixtures.html
- 
-Result is:
-Tests\BackendBundle\Controller\CallbackControllerTest::setUpBeforeClass
-Tests\BackendBundle\Controller\CallbackControllerTest::setUp
-Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
-Tests\BackendBundle\Controller\CallbackControllerTest::testOne
-Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
-Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
-Tests\BackendBundle\Controller\CallbackControllerTest::setUp
-Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
-Tests\BackendBundle\Controller\CallbackControllerTest::testTwo
-Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
-Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
-Tests\BackendBundle\Controller\CallbackControllerTest::tearDownAfterClass
-
+ * https://phpunit.de/manual/current/en/fixtures.html 
  */
 class Test004FixturesSetUpTearDownTest extends PHPUnit_Framework_TestCase {
 
@@ -80,3 +65,31 @@ class Test004FixturesSetUpTearDownTest extends PHPUnit_Framework_TestCase {
         throw $e;
     }
 }
+
+/*
+
+For all tests result is:
+Tests\BackendBundle\Controller\CallbackControllerTest::setUpBeforeClass
+Tests\BackendBundle\Controller\CallbackControllerTest::setUp
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::testOne
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
+Tests\BackendBundle\Controller\CallbackControllerTest::setUp
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::testTwo
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDownAfterClass
+
+for  --filter="testOne":
+Tests\BackendBundle\Controller\CallbackControllerTest::setUpBeforeClass
+Tests\BackendBundle\Controller\CallbackControllerTest::setUp
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPreConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::testOne
+Tests\BackendBundle\Controller\CallbackControllerTest::assertPostConditions
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDown.
+Tests\BackendBundle\Controller\CallbackControllerTest::tearDownAfterClass
+
+
+*/
